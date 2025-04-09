@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+</head>
+<body>
+<h2>Gestor de Tareas</h2>
+
+<!-- crear nueva tarea -->
+<h3>Crear Nueva Tarea</h3>
+<form id="createTaskForm">
+    <input type="text" id="title" placeholder="Título" required>
+    <input type="text" id="description" placeholder="Descripción" required>
+    <select id="status">
+        <option value="TODO">To Do</option>
+        <option value="IN_PROGRESS">In Progress</option>
+        <option value="DONE">Done</option>
+    </select>
+    <button type="submit">Crear</button>
+</form>
+
+<!-- lista de tareas -->
+<h3>Lista de Tareas</h3>
+<ul id="taskList"></ul>
+
+<!--actualizar tarea -->
+<h3>Actualizar Tarea</h3>
+<form id="updateTaskForm" style="display: none;">
+    <input type="hidden" id="updateId">
+    <input type="text" id="updateTitle" placeholder="Nuevo Título">
+    <input type="text" id="updateDescription" placeholder="Nueva Descripción">
+    <select id="updateStatus">
+        <option value="TODO">To Do</option>
+        <option value="IN_PROGRESS">In Progress</option>
+        <option value="DONE">Done</option>
+    </select>
+    <button type="submit">Actualizar</button>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
