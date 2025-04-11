@@ -7,13 +7,13 @@ public class Frecuencias_Maximas {
     public static void main(String[] args) {
         int[] numbers = {1, 1, 1, 1, 3, 3, 2, 1, 1, 1, 6, 4, 4, 6, 5, 5, 7, 4, 4, 5, 4, 7, 7, 7, 7, 7};
 
-        // Ordenamos el arreglo
+      
         Arrays.sort(numbers);
         System.out.println("Arreglo ordenado: " + Arrays.toString(numbers));
 
         int[][] resultados = obtenerDosNumerosMasFrecuentes(numbers);
 
-        // Mostramos resultados
+       
         System.out.println("\nPrimer Número más frecuente: " + resultados[0][0]);
         System.out.println("Repetido: " + resultados[0][1] + " veces");
 
@@ -50,7 +50,6 @@ public class Frecuencias_Maximas {
             }
         }
 
-        // Procesar el último número
         if (contador > maxFrecuencia) {
             segundonumeroMasFrecuente = numeroMasFrecuente;
             segundomaxFrecuencia = maxFrecuencia;
